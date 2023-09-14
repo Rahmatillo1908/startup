@@ -1,0 +1,652 @@
+.navbars {
+    background-color: transparent;
+}
+
+.navbar1 {
+    background-color: white;
+    color: #55565b;
+}
+.nav1 {
+    transition: 0.5s;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    z-index: 10;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0px 50px;
+}
+.nav1 p {
+    font-size: 30px;
+}
+.navbar-logo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    align-items: center;
+}
+.navbar1 a {
+    color: #55565b;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.navbar-links {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.navbar-links a:nth-child(n+9) {
+    font-size: 20px;
+}
+/* home */
+
+.home {
+    width: 100%;
+    height: 100vh;
+}
+
+.homeBg {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.homeBg img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    animation: name 25s linear;
+    transform: scale(1.2);
+}
+
+.home .homeText {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homeSub {
+    width: 80%;
+}
+
+.homeSub p {
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.homeSub h1 {
+    font-size: 150px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-top: 40px;
+}
+
+.homeSub h6 {
+    width: 50%;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.button {
+    padding: 10px 50px;
+    margin-top: 40px;
+    font-size: x-large;
+    border: none;
+    outline: none;
+    background-color: #5645ff;
+    color: white;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background: #1101c0;
+}
+.link {
+    font-size: 25px;
+    cursor: pointer;
+    padding: 5px 10px 7px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+    background: white;
+    box-shadow: 0px 0px 10px rgb(167, 167, 167);
+    transition: 0.5s;
+}
+.link a {
+    color: black;
+}
+@keyframes name {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+/* feature */
+
+.feature {
+    width: 100%;
+    color: gray;
+}
+
+.feature .featureCards {
+    padding: 80px 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.featureCard1 {
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.featureCard {
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    position: relative;
+    padding: 0px 30px;
+    text-align: center;
+}
+
+.featureCard a {
+    color: black;
+}
+
+.featureCard h1 {
+    font-size: 25px;
+}
+
+.featureCard::before {
+    width: 100%;
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: whitesmoke;
+    z-index: -1;
+    transition: 0.2s;
+    left: 0px;
+}
+
+.featureCard:hover::before {
+    left: 0px;
+    width: 0%;
+}
+
+.featureCard:hover {
+    box-shadow: 0px 0px 10px rgb(201, 201, 201);
+}
+
+.featureCard i,
+.featureCard h1 {
+    transition: 1.5s;
+}
+
+.featureCard:hover i,
+.featureCard:hover h1 {
+    color: dodgerblue;
+}
+
+
+/* port */
+.port {
+    width: 100%;
+    height: 50vh;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        center/cover url("https://html.waituk.com/roxine/img/big-15.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+
+.work {
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.work .workLi {
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+.workLi button {
+    outline: none;
+    border: none;
+    background: none;
+    color: #55565b;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.workLi button:nth-child(n+2)::before {
+    content: '-';
+    margin: 0px 20px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #55565b;
+}
+.workLi button:focus {
+    color: blue;
+}
+.work h1 {
+    padding: 70px 0px;
+}
+
+.workCards {
+    display: grid;
+    gap: 30px 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.workCard {
+    overflow: hidden;
+    position: relative;
+    transition: 0.4;
+    animation: scale 0.3s ease-in-out ;
+}
+@keyframes scale {
+    0% {
+        transform: scale(0);
+    }   
+    100% {
+        transform: scale(1);
+    }
+}
+
+.workCard img {
+    width: 100%;
+    transition: 0.5s;
+    transform: scale(1.3);
+}
+
+.workCard:hover img {
+    transform: scale(1);
+}
+
+.workWhiteHover {
+    position: absolute;
+    z-index: 5;
+    top: -100%;
+    right: -100%;
+    background: rgb(255, 255, 255, 0.6);
+    width: 150%;
+    transform: rotate(45deg);
+    height: 100%;
+}
+
+.workCard:hover .workWhiteHover {
+    transition: 0.9s;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+}
+
+.workHovers {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 0%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.workCard:hover .workHovers {
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workHovers i {
+    padding: 3px 10px;
+    font-size: 25px;
+    color: white;
+    margin: 1px 5px;
+    background-color: #1101c0;
+}
+
+/* element */
+
+
+
+.element {
+    color: gray;
+    padding: 100px 180px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.elementHead {
+    padding-bottom: 40px;
+}
+
+.elementText {
+    display: flex;
+}
+
+.elementText .elemetLeft {
+    width: 60%;
+    padding-right: 10px;
+}
+
+.elemetLeft button {
+    padding: 10px 35px;
+    color: white;
+    background-color: black;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.elementText .elementRight {
+    width: 40%;
+}
+
+.elementRight .elementLi {
+    display: flex;
+    font-size: 10px;
+    line-height: 30px;
+    color: #5645ff;
+}
+
+
+/* works */
+.works {
+    color: grey;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    height: 130vh;
+    background: center/cover no-repeat url("https://html.waituk.com/roxine/img/big-01.jpg");
+}
+
+.works h3 {
+    padding-top: 100px;
+}
+
+.works p {
+    width: 70%;
+    margin: auto;
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.workCarousels {
+    position: relative;
+    width: 83%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.workCarousel {
+    gap: 20px;
+    display: flex;
+    transition: 0.5s;
+}
+
+.container h3 {
+    padding-top: 30px;
+}
+
+.workItem {
+    width: 33%;
+    height: 500px;
+    position: relative;
+}
+
+.workItem img {
+    height: 90%;
+}
+
+.arrows {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 70px;
+    transform: translateX(5%);
+    margin: auto;
+    color: rgb(43, 43, 43);
+    transition: 0.3s;
+}
+
+.arrows div:hover {
+    transition: 0.2s;
+    color: grey;
+}
+
+.workHover {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    top: 70%;
+    background-color: #5645ff;
+    padding: 10px 20px;
+    opacity: 0;
+    color: white;
+}
+
+.workItem:hover .workHover {
+    top: 50%;
+    opacity: 1;
+}
+
+.worksP {
+    padding: 50px 0px;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+
+/* about */
+.about {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), center/cover url("https://html.waituk.com/roxine/img/visual-small-11.jpg");
+    color: whitesmoke;
+}
+
+.aboutCards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutCard {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.aboutCard .aboutIcon {
+    font-size: 50px;
+}
+
+.aboutCard:hover {
+    background: #5645ff;
+}
+
+/* testimonial */
+.content-block {
+    position: relative;
+    width: 100%;
+}
+
+.testimonialHeader {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.testimonialHeader p {
+    font-size: 17px;
+}
+
+.arrowsTestimonial {
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+
+.testimonialSlides {
+    width: 100%;
+    max-width: 800px;
+}
+
+.testimonial-slide {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 16px;
+    overflow: hidden;
+    grid-template-columns: calc(100% / 3);
+}
+
+.slide-item {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/* footer */
+
+.footerImages {
+    width: 70%;
+    height: 30vh;
+    background-color: dodgerblue;
+}
+
+.carousel-dots {
+    display: none !important;
+}
+
+.footerCarousel {
+    height: auto;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.footerDisplay .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 20% !important;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.footerDisplay .swiper-slide img {
+    display: block;
+    width: max-content;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 0px;
+}
+
+.footerDisplay .swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    margin-top: 100px;
+    background-color: #212121;
+    color: gray;
+    padding: 100px 0px 40px 0px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .footerMenu {
+    display: flex;
+    gap: 30px;
+}
+
+.footerMenu a {
+    color: gray;
+    font-size: small;
+}
+
+.footer .icon {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.footer p {
+    text-align: center;
+    padding: 100px 0px 0px 0px;
+}
